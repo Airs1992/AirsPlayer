@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MenuCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j61-J4-4AP">
+                        <rect key="frame" x="8" y="78" width="84" height="17"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vVN-uP-RA7">
+                        <rect key="frame" x="20" y="13" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="jwq-LW-2qi"/>
+                            <constraint firstAttribute="height" constant="60" id="pDe-ya-42a"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="j61-J4-4AP" secondAttribute="trailing" constant="8" id="JE9-bj-uHl"/>
+                <constraint firstItem="vVN-uP-RA7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="OAY-g0-SBn"/>
+                <constraint firstAttribute="bottom" secondItem="j61-J4-4AP" secondAttribute="bottom" constant="5" id="OqS-TW-1kZ"/>
+                <constraint firstItem="vVN-uP-RA7" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ebl-Um-KaK"/>
+                <constraint firstItem="j61-J4-4AP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="h9s-DU-8d2"/>
+                <constraint firstItem="j61-J4-4AP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="usV-bt-zgf"/>
+            </constraints>
+            <size key="customSize" width="100" height="100"/>
+            <connections>
+                <outlet property="itemImage" destination="vVN-uP-RA7" id="dWh-Ce-g90"/>
+                <outlet property="titleLabel" destination="j61-J4-4AP" id="IwF-SA-A6Y"/>
+            </connections>
+            <point key="canvasLocation" x="240" y="357"/>
+        </collectionViewCell>
+    </objects>
+</document>

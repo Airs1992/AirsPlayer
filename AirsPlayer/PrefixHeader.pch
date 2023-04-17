@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  AirsPlayer
+//
+//  Created by 洪尘 on 16/9/10.
+//  Copyright © 2016年 洪尘. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "FileResource.h"
+/**
+ *  2 判断是否为4inch        640*1136
+ */
+#define TWOSCREEN ([UIScreen mainScreen].bounds.size.height == 568)
+/**
+ *  3 判断是否为4.7inch   375*667   750*1334
+ */
+#define THREESCREEN ([UIScreen mainScreen].bounds.size.height == 667)
+/**
+ *  4 判断是否为5.5inch   414*1104   1242*2208
+ */
+#define FOURSCREEN ([UIScreen mainScreen].bounds.size.height == 1104)
+
+/**
+ *   define
+ */
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define iOS7GE [[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0
+#define ApplicationDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+//我喜欢的蓝色
+#define YiBlue [UIColor colorWithRed:0.24f green:0.51f blue:0.78f alpha:1.00f]
+//灰色
+#define YiGray [UIColor colorWithRed:0.80f green:0.80f blue:0.80f alpha:1.00f]
+#define YiTextGray [UIColor colorWithRed:0.54f green:0.54f blue:0.54f alpha:1.00f]
+#define YiRed [UIColor colorWithRed:0.93 green:0.41 blue:0.36 alpha:1]
+
+// block self
+#define WEAKSELF typeof(self) __weak weakSelf = self;
+#define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
+
+
+#endif /* PrefixHeader_pch */
